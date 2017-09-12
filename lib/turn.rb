@@ -40,7 +40,7 @@ def turn(board)
     return true
   else
     puts "Please enter 1-9:"
-    turn(user_input)
+    turn(board)
   end
 
 
