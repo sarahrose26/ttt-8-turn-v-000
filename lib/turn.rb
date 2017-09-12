@@ -32,15 +32,28 @@ def move(array, index, value="X")
   array[index] = value
 end
 
+
 def turn(board)
-  puts "Please enter 1-9:"
-  user_input = gets.strip.to_i
-  index = input_to_index(user_input)
-  if valid_move?(board, index)
-     return move(board, user_input)
-  else
-    turn(board)
-  end
-  move(board, user_input)
-  display_board(board)
-end
+ +  puts "Please enter 1-9:"
+ +  position = gets.chomp
+ +  if valid_move?(board, position)
+ +   true
+ +   move(board, position, char = "X")
+ +   display_board(board)
+ +  else
+ +    puts "Please enter 1-9:"
+ +    position = gets.chomp
+ +  end
+ +end
+# def turn(board)
+#   puts "Please enter 1-9:"
+#   user_input = gets.strip.to_i
+#   index = input_to_index(user_input)
+#   if valid_move?(board, index)
+#      return move(board, user_input)
+#   else
+#     turn(board)
+#   end
+#   move(board, user_input)
+#   display_board(board)
+# end
