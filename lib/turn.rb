@@ -39,7 +39,7 @@ def turn(board)
   if valid_move?(board, index)
      return move(board, user_input)
   else
-    turn(board)
+    #turn(board)
     move(board, user_input)
   end
   display_board(board)
