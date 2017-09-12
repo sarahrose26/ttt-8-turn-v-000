@@ -39,10 +39,9 @@ def turn(board)
   if valid_move?(board, 0)
     return true
   else
-    turn(board)
+    puts "Please enter 1-9:"
   end
-# if index is valid
-#   make the move for input
+
 
 # else
 #   ask for input again until you get a valid input
