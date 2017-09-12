@@ -54,9 +54,9 @@ def turn(board)
      move(board, input)
      display_board(board)
    else
-     while valid_move?(board, input) == false
+     while valid_move?(board, user_input) == false
        puts "Please enter 1-9:"
-       input = gets.strip
+       user_input = gets.strip
      end
    end
  end
