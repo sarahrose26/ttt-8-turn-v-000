@@ -39,7 +39,11 @@ def turn(board)
   if valid_move?(board, user_input)
      return move(board, user_input)
   else
-      return turn(board)
+    puts "Invalid selection. Please enter 1-9:"
+    user_input = gets.strip.to_i
   end
+  move (board, user_input)
     display_board(board)
   end
+
+  
