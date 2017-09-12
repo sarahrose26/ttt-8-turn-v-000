@@ -43,7 +43,7 @@ def turn(board)
     user_input = gets.strip.to_i
   end
   move (board, user_input)
-    display_board(board)
+  display_board(board)
   end
 
   
